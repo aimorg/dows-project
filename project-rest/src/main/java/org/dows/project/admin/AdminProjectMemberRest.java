@@ -44,6 +44,6 @@ public class AdminProjectMemberRest{
     @DeleteMapping("admin/project/member/entity")
     @Schema(title = "删除项目成员")
     public void deleteEntity(@RequestBody DeleteProjectMemberEntityRequest deleteProjectMemberEntityRequest){
-        return null;
+        
     }
 }

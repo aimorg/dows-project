@@ -37,6 +37,6 @@ public class AdminProjectDocumentRest{
     @PutMapping("admin/project/document/entity")
     @Schema(title = "更新项目文档")
     public void putEntity(@RequestBody PutProjectDocumentEntityRequest putProjectDocumentEntityRequest){
-        return null;
+        
     }
 }

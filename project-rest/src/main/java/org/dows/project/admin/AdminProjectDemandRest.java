@@ -24,12 +24,12 @@ public class AdminProjectDemandRest{
     @PostMapping("admin/project/demand/entity")
     @Schema(title = "创建")
     public void postEntity(@RequestBody PostProjectDemandEntityRequest postProjectDemandEntityRequest){
-        return null;
+        
     }
     @PutMapping("admin/project/demand/entity")
     @Schema(title = "更新")
     public void putEntity(@RequestBody PutProjectDemandEntityRequest putProjectDemandEntityRequest){
-        return null;
+        
     }
     @GetMapping("admin/project/demand/list")
     @Schema(title = "查询项目需求")
@@ -44,6 +44,6 @@ public class AdminProjectDemandRest{
     @DeleteMapping("admin/project/demand/entity")
     @Schema(title = "删除")
     public void deleteEntity(@RequestBody DeleteProjectDemandEntityRequest deleteProjectDemandEntityRequest){
-        return null;
+        
     }
 }

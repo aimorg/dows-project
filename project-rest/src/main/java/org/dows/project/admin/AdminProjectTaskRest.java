@@ -29,7 +29,7 @@ public class AdminProjectTaskRest{
     @PutMapping("admin/project/task/entity")
     @Schema(title = "更新任务关联")
     public void putEntity(@RequestBody PutProjectTaskEntityRequest putProjectTaskEntityRequest){
-        return null;
+        
     }
     @GetMapping("admin/project/task/list")
     @Schema(title = "项目任务列表")
@@ -44,6 +44,6 @@ public class AdminProjectTaskRest{
     @DeleteMapping("admin/project/task/entity")
     @Schema(title = "删除")
     public void deleteEntity(@RequestBody DeleteProjectTaskEntityRequest deleteProjectTaskEntityRequest){
-        return null;
+        
     }
 }

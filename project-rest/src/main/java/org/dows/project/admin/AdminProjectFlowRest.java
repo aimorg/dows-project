@@ -22,12 +22,12 @@ public class AdminProjectFlowRest{
     @PostMapping("admin/project/flow/entity")
     @Schema(title = "新建项目流程")
     public void postEntity(@RequestBody PostProjectFlowEntityRequest postProjectFlowEntityRequest){
-        return null;
+        
     }
     @PutMapping("admin/project/flow/entity")
     @Schema(title = "更新项目流程")
     public void putEntity(@RequestBody PutProjectFlowEntityRequest putProjectFlowEntityRequest){
-        return null;
+        
     }
     @GetMapping("admin/project/flow/list")
     @Schema(title = "获取项目流程")
@@ -37,6 +37,6 @@ public class AdminProjectFlowRest{
     @DeleteMapping("admin/project/flow/entity")
     @Schema(title = "删除项目流程")
     public void deleteEntity(@RequestBody DeleteProjectFlowEntityRequest deleteProjectFlowEntityRequest){
-        return null;
+        
     }
 }

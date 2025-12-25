@@ -35,7 +35,7 @@ public class AdminProjectRest{
     @PutMapping("admin/project/entity")
     @Schema(title = "更新")
     public void putEntity(@RequestBody PutProjectEntityRequest putProjectEntityRequest){
-        return null;
+        
     }
     @GetMapping("admin/project/page")
     @Schema(title = "根据查询条件分页")
@@ -50,7 +50,7 @@ public class AdminProjectRest{
     @DeleteMapping("admin/project/entity")
     @Schema(title = "删除")
     public void deleteEntity(@RequestBody DeleteProjectEntityRequest deleteProjectEntityRequest){
-        return null;
+        
     }
     @PostMapping("admin/project/member")
     @Schema(title = "增加项目成员")
@@ -65,6 +65,6 @@ public class AdminProjectRest{
     @DeleteMapping("admin/project/member")
     @Schema(title = "删除项目成员")
     public void deleteMember(@RequestBody DeleteProjectMemberRequest deleteProjectMemberRequest){
-        return null;
+        
     }
 }

@@ -29,7 +29,7 @@ public class AdminProjectMilestoneRest{
     @PutMapping("admin/project/milestone/entity")
     @Schema(title = "更新项目里程碑")
     public void putEntity(@RequestBody PutProjectMilestoneEntityRequest putProjectMilestoneEntityRequest){
-        return null;
+        
     }
     @GetMapping("admin/project/milestone/entity")
     @Schema(title = "获取项目里程碑")
@@ -39,7 +39,7 @@ public class AdminProjectMilestoneRest{
     @DeleteMapping("admin/project/milestone/entity")
     @Schema(title = "删除项目里程碑")
     public void deleteEntity(@RequestBody DeleteProjectMilestoneEntityRequest deleteProjectMilestoneEntityRequest){
-        return null;
+        
     }
     @GetMapping("admin/project/milestone/list")
     @Schema(title = "项目里程碑列表")
