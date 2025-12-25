@@ -1,0 +1,70 @@
+package org.dows.project.admin;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.*;
+import org.dows.project.admin.PostProjectEntityRequest;
+import org.dows.project.admin.PostProjectEntityResponse;
+import org.dows.project.admin.PutProjectEntityRequest;
+import org.dows.project.admin.PutProjectEntityResponse;
+import org.dows.project.admin.GetProjectPageRequest;
+import org.dows.project.admin.GetProjectPageResponse;
+import org.dows.project.admin.GetProjectEntityRequest;
+import org.dows.project.admin.GetProjectEntityResponse;
+import org.dows.project.admin.DeleteProjectEntityRequest;
+import org.dows.project.admin.DeleteProjectEntityResponse;
+import org.dows.project.admin.PostProjectMemberRequest;
+import org.dows.project.admin.PostProjectMemberResponse;
+import org.dows.project.admin.GetProjectMemberRequest;
+import org.dows.project.admin.GetProjectMemberResponse;
+import org.dows.project.admin.DeleteProjectMemberRequest;
+import org.dows.project.admin.DeleteProjectMemberResponse;
+
+@RequiredArgsConstructor
+@Tag(name = "AdminProjectRest", description = "项目实例接口")
+@RestController
+public class AdminProjectRest{
+
+    @PostMapping("admin/project/entity")
+    @Schema(title = "创建")
+    public PostProjectEntityResponse postEntity(@RequestBody PostProjectEntityRequest postProjectEntityRequest){
+        return null;
+    }
+    @PutMapping("admin/project/entity")
+    @Schema(title = "更新")
+    public PutProjectEntityResponse putEntity(@RequestBody PutProjectEntityRequest putProjectEntityRequest){
+        return null;
+    }
+    @GetMapping("admin/project/page")
+    @Schema(title = "根据查询条件分页")
+    public GetProjectPageResponse getPage( GetProjectPageRequest getProjectPageRequest){
+        return null;
+    }
+    @GetMapping("admin/project/entity")
+    @Schema(title = "详情")
+    public GetProjectEntityResponse getEntity( GetProjectEntityRequest getProjectEntityRequest){
+        return null;
+    }
+    @DeleteMapping("admin/project/entity")
+    @Schema(title = "删除")
+    public DeleteProjectEntityResponse deleteEntity(@RequestBody DeleteProjectEntityRequest deleteProjectEntityRequest){
+        return null;
+    }
+    @PostMapping("admin/project/member")
+    @Schema(title = "增加项目成员")
+    public PostProjectMemberResponse postMember(@RequestBody PostProjectMemberRequest postProjectMemberRequest){
+        return null;
+    }
+    @GetMapping("admin/project/member")
+    @Schema(title = "项目成员列表")
+    public GetProjectMemberResponse getMember( GetProjectMemberRequest getProjectMemberRequest){
+        return null;
+    }
+    @DeleteMapping("admin/project/member")
+    @Schema(title = "删除项目成员")
+    public DeleteProjectMemberResponse deleteMember(@RequestBody DeleteProjectMemberRequest deleteProjectMemberRequest){
+        return null;
+    }
+}
