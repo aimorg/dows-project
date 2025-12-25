@@ -36,7 +36,7 @@ public class AdminProjectKanbanRest{
     }
     @DeleteMapping("admin/project/kanban/entity")
     @Schema(title = "删除项目看板")
-    public DeleteProjectKanbanEntityResponse deleteEntity(@RequestBody DeleteProjectKanbanEntityRequest deleteProjectKanbanEntityRequest){
+    public void deleteEntity(@RequestBody DeleteProjectKanbanEntityRequest deleteProjectKanbanEntityRequest){
         return null;
     }
 }

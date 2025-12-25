@@ -23,12 +23,12 @@ public class AdminProjectTagRest{
 
     @PostMapping("admin/project/tag/entity")
     @Schema(title = "保存")
-    public PostProjectTagEntityResponse postEntity(@RequestBody PostProjectTagEntityRequest postProjectTagEntityRequest){
+    public void postEntity(@RequestBody PostProjectTagEntityRequest postProjectTagEntityRequest){
         return null;
     }
     @PutMapping("admin/project/tag/entity")
     @Schema(title = "更新")
-    public PutProjectTagEntityResponse putEntity(@RequestBody PutProjectTagEntityRequest putProjectTagEntityRequest){
+    public void putEntity(@RequestBody PutProjectTagEntityRequest putProjectTagEntityRequest){
         return null;
     }
     @GetMapping("admin/project/tag/list")
@@ -43,7 +43,7 @@ public class AdminProjectTagRest{
     }
     @DeleteMapping("admin/project/tag/entity")
     @Schema(title = "删除")
-    public DeleteProjectTagEntityResponse deleteEntity(@RequestBody DeleteProjectTagEntityRequest deleteProjectTagEntityRequest){
+    public void deleteEntity(@RequestBody DeleteProjectTagEntityRequest deleteProjectTagEntityRequest){
         return null;
     }
 }

@@ -24,7 +24,7 @@ public class AdminProjectSettingRest{
     }
     @DeleteMapping("admin/project/setting/entity")
     @Schema(title = "删除")
-    public DeleteProjectSettingEntityResponse deleteEntity(@RequestBody DeleteProjectSettingEntityRequest deleteProjectSettingEntityRequest){
+    public void deleteEntity(@RequestBody DeleteProjectSettingEntityRequest deleteProjectSettingEntityRequest){
         return null;
     }
 }
