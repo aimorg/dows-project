@@ -1,8 +1,11 @@
 package org.dows.project.admin;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -27,23 +30,24 @@ public class GetProjectEntityResponse {
     @Schema(description = "可见范围(项目成员，全公司)")
     private Integer scope;
 
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @Schema(description = "项目开始时间")
-    private Object startTime;
-
+    private LocalDateTime startTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @Schema(description = "项目截止时间")
-    private Object endTime;
+    private LocalDateTime endTime;
 
     @Schema(description = "应用id")
     private String app_id;
-
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @Schema(description = "时间戳")
-    private Object createTime;
-
+    private LocalDateTime createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @Schema(description = "更新时间")
-    private Object updateTime;
-
+    private LocalDateTime updateTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @Schema(description = "删除时间")
-    private Object deleteTime;
+    private LocalDateTime deleteTime;
 
     @Schema(description = "创建者ID")
     private Long createId;

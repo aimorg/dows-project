@@ -19,10 +19,4 @@ public class ProjectApplication {
         dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));
         SpringApplication.run(ProjectApplication.class, args);
     }
-
-
-//    @Bean
-//    public ControllerMockAspect controllerMockAspect(@Autowired ApiMockProperties apiMockProperties){
-//        return new ControllerMockAspect(apiMockProperties);
-//    }
 }
