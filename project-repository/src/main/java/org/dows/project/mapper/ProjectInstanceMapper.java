@@ -2,10 +2,9 @@ package org.dows.project.mapper;
 
 import com.mybatisflex.core.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
-
 import org.dows.project.entity.ProjectInstanceEntity;
 
 @Mapper
-public interface ProjectInstanceMapper extends BaseMapper<ProjectInstanceEntity>{
+public interface ProjectInstanceMapper extends BaseMapper<ProjectInstanceEntity> {
 
 }
